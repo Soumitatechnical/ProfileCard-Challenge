@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --prime-blue:#00B6C7;
+    --text-color:#969696;
+}
+
+body{
+    font-family: 'Kumbh Sans', sans-serif ;
+    font-size: 18px;
+    line-height: 1.6;
+    background-color: var(--prime-blue);  
+    background-image: url('./images/bg-pattern-bottom.svg');
+    
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-position-x: 520px;
+    background-position-y: 320px;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+}
+
+#top-pattern{
+    width: 50%;
+    margin-top: -220px;
+}
+
+.card-container{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    min-width:250px;
+    min-height: 350px;
+    background-color: #eee;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    box-sizing: border-box;
+  
+}
+
+.card-image{
+    max-width: 100%;
+    height: 25vh;
+  
+}
+
+.card-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.info{
+    width: inherit;
+    border-bottom: 1px solid var(--text-color);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px ;
+}
+
+.info-image{
+    width: 70px;
+    height: 70px;
+    /* border-radius: 50%; */
+    position: absolute;
+    left:140px;
+    top:-35px;
+    
+    
+}
+
+.info-image img{
+    width: 100%;
+    height: 100%;
+    box-sizing: content-box;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    /* object-fit: co; */
+}
+.info-text{
+    
+text-align: center;
+    margin-top: 50px;
+}
+
+.info-text span{
+    color: var(--text-color);
+}
+
+.stats{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.stats>div>p{
+    font-size:14px;
+    color: var(--text-color);
+}
+
+@media (max-width:690px){
+    .info-image{
+        position: absolute;
+        left:50%;
+        transform: translate(-50%);
+        
+    }
+}
+
